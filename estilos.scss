@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@900&display=swap');
+$oscuro:#0D1321;
+$gris: #6A706E;
+$blanco: #ffff;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn_wsp{
+    position: fixed;
+    font-size: 3rem;
+    width: 50px;
+    line-height: 50px;
+    bottom: 30px;
+    right: 30px;
+    color:#0df053;
+    border-radius: 25%;
+}
+@import 'header';
+@import 'banner';
+@import 'queEs';
+@import 'reseñas';
+@import 'paquetes';
+@import 'forms';
+@import 'footer';
+
+
+
+
+@import 'mediaqueryes'
+
+
+

@@ -1,0 +1,100 @@
+.titulo-testimonios{
+    margin-top: 40px;
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: "Roboto";
+    color: $oscuro;
+}
+
+.reseña{
+    margin-top: -50px;
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(to bottom right, $blanco 50%, $gris 50%);
+    .reseñas_right{
+        display: flex;
+        align-items:center;
+        width: 26%;
+        img{
+            margin-left: 7.3rem;
+            width: 100%;
+        }
+    }
+    
+    .slide-row{
+        display: flex;
+        width: 3000px;
+        transition: 0.5s;
+        .slide-col{
+            width: 100%;
+            height: 400px;
+            position: relative;
+            .user-img{
+                position: absolute;
+                top: 0;
+                right: 0px;
+                height: 100%;
+                img{
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+            .user-text{
+                background: $oscuro;
+                width: 420px;
+                height: 250px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 10px;
+                color: $blanco;
+                padding: 35px;
+                z-index:2;
+
+                p{
+                    font-family: 'Poppins';
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                h3{
+                    font-family: 'Roboto';
+                    margin: 14px 0 5px;
+                    color: $blanco;
+                }
+            }
+        }
+    }
+    .reseñas_left{
+        width: 800px;
+        height: 400px;
+        position: relative;
+        top: 50%;
+        left:47%;
+        transform: translate(-50%,-50%);
+    }
+    .indicadores{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -50px;
+        .btn{
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            margin: 4px;
+            border-radius: 15px;
+            background: $oscuro;
+            cursor: pointer;
+        }
+        .active{
+            width: 25px;
+        }
+    }
+    .testimonios{
+        width: 93.7%;
+        height: 100%;
+        overflow: hidden;
+    }
+}

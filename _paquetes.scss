@@ -1,0 +1,114 @@
+.paquetes{
+    height: 100vh;
+    background: linear-gradient(to bottom right, $gris 50%, $blanco 50%);
+    position: relative;
+    width: 100%;
+    .titulo__paquete{
+        font-size: 2.5rem;
+        font-family: 'Roboto';
+        color: $oscuro;
+        text-align: center;
+        
+    }
+    .container__card{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .card{
+            width: 350px;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 20px 20px 50px rgba($color: $oscuro, $alpha: 0.5);
+            border-radius: 15px;
+            background: rgba($color: $blanco, $alpha:0.2);
+            border-top: rgba($color: $blanco, $alpha:0.5) ;
+            border-left: rgba($color: $blanco, $alpha:0.5) ;
+            backdrop-filter: blur(5px);
+            transition: all 300ms;
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+            &:hover .cover__card{
+                transform: scale(1.1);
+            }
+            .cover__card{
+                width: 100%;
+                height: 230px;
+                border-radius: 14px;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    transition: all 300ms;
+                }
+            }
+            .texto{
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h2{
+                    text-align: center;
+                    font-size: 1.6rem;
+                    font-family: 'Roboto';
+                    margin-top: 20px;
+                    font-weight: bold;
+                    color: $oscuro;
+                }
+                ul{
+                    margin-left: 15px;
+                    li{
+                        color: $oscuro;
+                        font-family: 'Poppins';
+                        font-size: 0.8rem;
+                        font-weight: bold;
+                    }
+                }
+                hr{
+                    border: none;
+                }
+                .footer__card{
+                    .price{
+                        text-align: center;
+                        h3{
+                            margin-top: 20px;
+                            margin-bottom: 10px;
+                            font-family: 'roboto';
+                            font-weight: bold;
+                        }
+                        button{
+                            margin-top: 20px;
+                            background-color: $blanco;
+                            cursor: pointer;
+                            border: 3px solid;
+                            padding: 5px 6px;
+                            color: $oscuro;
+                            font-size: 1.2rem;
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: bold;
+                            border-radius: 6px;
+                            a{
+                                text-decoration: none;
+                                color: $oscuro;
+                            }
+                            &:hover{
+                                background: $blanco;
+                                box-shadow: 0 0 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

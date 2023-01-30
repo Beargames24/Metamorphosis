@@ -1,0 +1,185 @@
+@media screen and (max-width: 900px) {
+    header{
+        .logo{
+            width: 60%;
+        }
+        .logo img{
+            width: 40px;
+        }
+        .header_logo{
+            display: inline;
+        }
+        height: 48px;
+        justify-content: space-around;
+        padding: 0 8px;
+        .header_toggle{
+            font-size: 30px;
+            display: block;
+            color: $blanco;
+        }
+        .header_close{
+            color: $oscuro;
+            position: absolute;
+            right: 24px;
+            display: block;
+            font-size: 24px;
+            border-radius: 50%;
+
+            &:hover{
+                background: rgba($color: #000000, $alpha: 0.2)   ;
+            }
+        }
+        .nav{
+            position: fixed;
+            top: 0;
+            right: -100%;
+            background: $blanco;
+            color: $blanco;
+            width: 60%;
+            height: 100vh;
+            padding: 24px 0;
+            z-index: 100;
+            transition: 0.5s;
+            border-radius:0 0 0 50% ;
+
+        }
+        .nav_list{
+
+            display: flex;
+            flex-direction: column;
+            .nav_item{
+                margin: 2rem 0;
+                .nav_link{
+                    color: $oscuro;
+                    border-radius: 10px;
+                    &:hover{
+                        border: none;
+                        background: rgba($gris, $alpha: .2);
+                    }  
+                }
+            }
+        }
+        .show{
+            right: 0;
+        }
+    }
+    .banner{
+        .contenedor-banner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .contenedor_right{
+                width: 100%;
+                h1{
+                    margin: 40px 0;
+                    text-align: center;
+                    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+                    font-size: 4.5rem;
+                    color: $blanco;
+                }
+                h2{
+                    text-align: center;
+                    font-weight: 100;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1.5rem;
+                    color: $blanco;
+                }
+            }
+    
+            .contenedor_left{
+                display: none;
+                img{
+                    display: none;
+                }
+            }
+        }
+        button{
+            width:100%;
+            text-align: center;
+            background-color: $oscuro;
+            cursor: pointer;
+            border: 3px solid;
+            padding: 16px 32px;
+            color: $blanco;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            border-radius: 20px;
+            &:hover{
+                background: $oscuro;
+                box-shadow: 0 0 20px;
+            }
+        }
+    }
+    .queEs{
+        display: none;
+    }
+    .reseña{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        .reseñas_right{
+            display: none;
+        }
+        
+        .reseñas_left{
+            width: 130%;
+            top: 50%;
+            left:30%;
+
+        }
+        .slide-row .slide-col {
+            margin-top: 10px;
+            width: 100%;
+            height: 300px;
+            position: relative;
+
+            .user-text {
+                background: rgb(13, 19, 33);
+                width: 30%;
+                height: 106%;
+                position: absolute;
+                left: 28%;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 10px;
+                padding: 25px;
+            }
+            .user-img {
+                width: 58%;
+                position: absolute;
+                top: 0px;
+                right: 2%;
+                height: 100%;
+            }
+        }
+        .indicadores{
+            position: absolute;
+            left: 65%;
+            transform: translateX(-50%);
+            bottom: -50px;
+            .btn{
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                margin: 4px;
+                border-radius: 15px;
+                background: $oscuro;
+                cursor: pointer;
+            }
+            .active{
+                width: 25px;
+            }
+        }
+    }
+
+
+    .paquetes{
+        display: block;
+        height: 1800px;
+        margin-bottom: 22rem;
+        .container__card{
+            height: 100%;
+        }
+    }
+}

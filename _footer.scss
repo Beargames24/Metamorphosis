@@ -1,0 +1,38 @@
+footer{
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    background: $oscuro;
+    min-height: 100px;
+    padding: 20px 50px;
+    flex-direction: column;
+
+    .icons{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }
+    li{
+        list-style: none;
+        a{
+            font-size: 1.8rem;
+            color: $blanco;
+            margin: 0 10px;
+            display: inline;
+            transition: 0.5s;
+
+            &:hover{
+                transform: translatey(-10px);
+            }
+        }
+    }
+    p{
+        color: $blanco;
+        font-size: 1.1rem;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+}

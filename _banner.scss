@@ -1,0 +1,63 @@
+
+
+.banner{
+    #particles-js{
+        max-height: 1040px;
+        background: $oscuro;
+        height: 95vh;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .contenedor-banner{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+        .contenedor_right{
+            width: 40%;
+            h1{
+                font-family: 'Sofia Sans Semi Condensed', sans-serif;
+                font-size: 5.5rem;
+                color: $blanco;
+            }
+            h2{
+                font-weight: 100;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.5rem;
+                color: $blanco;
+    
+            }
+        }
+
+        .contenedor_left{
+            width: 30%;
+
+            img{
+                border-radius: 50%;
+            }
+        }
+    }
+    button{
+        margin-top: 40px;
+        background-color: $oscuro;
+        cursor: pointer;
+        border: 3px solid;
+        padding: 16px 32px;
+        color: $blanco;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        border-radius: 20px;
+        a{
+            text-decoration: none;
+            color: $blanco;
+        }
+        &:hover{
+            background: $oscuro;
+            box-shadow: 0 0 20px;
+        }
+    }
+}
